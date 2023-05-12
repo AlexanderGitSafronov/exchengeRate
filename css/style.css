@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bruno Ace", cursive;
+}
+
+.wrapper {
+  background-image: radial-gradient(
+    circle at 107.92% 9.44%,
+    #8a1b8f 0,
+    #761291 25%,
+    #5d0a93 50%,
+    #3b0995 75%,
+    #000f97 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.exchenge {
+  margin-top: 15vh;
+  background: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(10px);
+  height: 450px;
+  width: 800px;
+  border-radius: 15px;
+  border: 1px solid rgba(43, 43, 43, 0.568);
+  box-shadow: 0 25px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.exchenge__tittle {
+  text-align: center;
+  padding-top: 20px;
+}
+.exchenge__body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.exchenge__body_input {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exchenge__body_input input,
+.exchenge__body_input select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(43, 43, 43, 0.568);
+  background: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+.exchenge__body_input select {
+  padding: 9px 10px;
+}
+.icon {
+  padding: 0px 40px;
+  width: 40px;
+  height: 30px;
+  background-image: url("../image/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}

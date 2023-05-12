@@ -1,0 +1,26 @@
+@media (max-width: 992px) {
+  .exchenge {
+    width: 400px;
+  }
+  .exchenge__body {
+    margin-top: 20%;
+  }
+  .exchenge__body_input {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .first__input_block {
+    display: flex;
+    align-items: center;
+  }
+  .second___input_block {
+    display: flex;
+    align-items: center;
+  }
+  .second___input_block input {
+    order: 2;
+  }
+  .second___input_block select {
+    order: 1;
+  }
+}
