@@ -14,6 +14,7 @@ async function getExchangeRate() {
   result.forEach((item) => {
     rates[item.cc] = item.rate;
   });
+  console.log(result);
 }
 getExchangeRate();
 
@@ -23,7 +24,13 @@ firstInput.addEventListener("input", () => {
   );
 });
 secondSelect.addEventListener("input", () => {
-  secondInput.value = (+firstInput.value / +rates[secondSelect.value]).toFixed(
+  firstInput.value = (+secondInput.value * +rates[secondSelect.value]).toFixed(
+    2
+  );
+});
+
+secondInput.addEventListener("input", () => {
+  firstInput.value = (+secondInput.value * +rates[secondSelect.value]).toFixed(
     2
   );
 });
